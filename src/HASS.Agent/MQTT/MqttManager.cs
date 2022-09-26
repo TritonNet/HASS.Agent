@@ -527,7 +527,7 @@ namespace HASS.Agent.MQTT
                 .WithClientId(Variables.AppSettings.MqttClientId)
                 .WithTcpServer(Variables.AppSettings.MqttAddress, Variables.AppSettings.MqttPort)
                 .WithCleanSession()
-                .WithWillMessage(lastWillMessage)
+                //.WithWillMessage(lastWillMessage)
                 .WithKeepAlivePeriod(TimeSpan.FromSeconds(15));
 
             // optional credentials
@@ -538,7 +538,9 @@ namespace HASS.Agent.MQTT
             {
                 UseTls = Variables.AppSettings.MqttUseTls,
                 AllowUntrustedCertificates = Variables.AppSettings.MqttAllowUntrustedCertificates,
-                SslProtocol = Variables.AppSettings.MqttUseTls ? System.Security.Authentication.SslProtocols.Tls12 : System.Security.Authentication.SslProtocols.None
+                SslProtocol = Variables.AppSettings.MqttUseTls ? System.Security.Authentication.SslProtocols.Tls12 : System.Security.Authentication.SslProtocols.None,
+                IgnoreCertificateChainErrors = true,
+                IgnoreCertificateRevocationErrors = true,
             };
 
             // configure certificates
