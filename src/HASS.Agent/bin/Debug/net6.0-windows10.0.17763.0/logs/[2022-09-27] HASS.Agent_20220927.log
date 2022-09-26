@@ -1,0 +1,9 @@
+2022-09-27 00:48:02.717 +13:00 [INF] [SETTINGS] Config storage path: D:\projects\HASS.Agent\src\HASS.Agent\bin\Debug\net6.0-windows10.0.17763.0\config
+2022-09-27 00:48:02.909 +13:00 [INF] [SETTINGS] No config found, storing default settings
+2022-09-27 00:48:03.421 +13:00 [INF] [LOCALIZTION] No language setting stored, falling back to the system's UI culture: English (United States)
+2022-09-27 00:48:03.421 +13:00 [WRN] [LOCALIZATION] The selected UI culture isn't yet supported, please help out by translating:
+2022-09-27 00:48:03.421 +13:00 [WRN] [LOCALIZATION] https://hassagent.readthedocs.io/en/latest/translating/
+2022-09-27 00:48:03.422 +13:00 [INF] [LOCALIZATION] Setting default: English
+2022-09-27 00:48:04.959 +13:00 [INF] [SETTINGS_QUICKACTIONS] Config not found, no entities loaded
+2022-09-27 00:48:04.964 +13:00 [INF] [SETTINGS_COMMANDS] Config not found, no entities loaded
+2022-09-27 00:48:04.970 +13:00 [INF] [SETTINGS_SENSORS] Config not found, no entities loaded

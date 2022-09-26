@@ -159,6 +159,7 @@ namespace HASS.Agent.Extensions
                 MqttUseRetainFlag = rpcServiceMqttSettings.MqttUseRetainFlag,
                 MqttRootCertificate = rpcServiceMqttSettings.MqttRootCertificate,
                 MqttClientCertificate = rpcServiceMqttSettings.MqttClientCertificate,
+                MqttClientCertificatePassword = rpcServiceMqttSettings.MqttClientCertificatePassword,
                 MqttClientId = rpcServiceMqttSettings.MqttClientId
             };
             return serviceMqttSettings;
@@ -183,6 +184,7 @@ namespace HASS.Agent.Extensions
                 MqttUseRetainFlag = serviceMqttSettings.MqttUseRetainFlag,
                 MqttRootCertificate = serviceMqttSettings.MqttRootCertificate,
                 MqttClientCertificate = serviceMqttSettings.MqttClientCertificate,
+                MqttClientCertificatePassword = serviceMqttSettings.MqttClientCertificatePassword,
                 MqttClientId = serviceMqttSettings.MqttClientId
             };
             return rpcServiceMqttSettings;

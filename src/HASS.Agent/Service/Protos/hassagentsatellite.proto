@@ -119,7 +119,8 @@ message RpcServiceMqttSettings {
   bool mqttUseRetainFlag = 8;
   string mqttRootCertificate = 9;
   string mqttClientCertificate = 10;
-  string mqttClientId = 11;
+  string mqttClientCertificatePassword = 11;
+  string mqttClientId = 12;
 }
 
 message RpcConfiguredServerSensor {

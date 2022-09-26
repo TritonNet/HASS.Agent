@@ -1,0 +1,2 @@
+obj\Debug\net6.0-windows10.0.17763.0\Service\Protos/Hassagentsatellite.cs \
+obj\Debug\net6.0-windows10.0.17763.0\Service\Protos/HassagentsatelliteGrpc.cs: Service/Protos/hassagentsatellite.proto

@@ -259,6 +259,7 @@ namespace HASS.Agent.Forms
             _mqtt.TbMqttClientId.Text = Variables.AppSettings.MqttClientId;
             _mqtt.TbMqttRootCertificate.Text = Variables.AppSettings.MqttRootCertificate;
             _mqtt.TbMqttClientCertificate.Text = Variables.AppSettings.MqttClientCertificate;
+            _mqtt.TbMqttClientCertificatePassword.Text = Variables.AppSettings.MqttClientCertificatePassword;
             _mqtt.CbAllowUntrustedCertificates.CheckState = Variables.AppSettings.MqttAllowUntrustedCertificates ? CheckState.Checked : CheckState.Unchecked;
             _mqtt.CbUseRetainFlag.CheckState = Variables.AppSettings.MqttUseRetainFlag ? CheckState.Checked : CheckState.Unchecked;
 
@@ -353,6 +354,7 @@ namespace HASS.Agent.Forms
             Variables.AppSettings.MqttClientId = _mqtt.TbMqttClientId.Text;
             Variables.AppSettings.MqttRootCertificate = _mqtt.TbMqttRootCertificate.Text;
             Variables.AppSettings.MqttClientCertificate = _mqtt.TbMqttClientCertificate.Text;
+            Variables.AppSettings.MqttClientCertificatePassword = _mqtt.TbMqttClientCertificatePassword.Text;
             Variables.AppSettings.MqttAllowUntrustedCertificates = _mqtt.CbAllowUntrustedCertificates.CheckState == CheckState.Checked;
             Variables.AppSettings.MqttUseRetainFlag = _mqtt.CbUseRetainFlag.CheckState == CheckState.Checked;
 

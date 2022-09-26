@@ -552,7 +552,7 @@ namespace HASS.Agent.MQTT
             if (!string.IsNullOrEmpty(Variables.AppSettings.MqttClientCertificate))
             {
                 if (!File.Exists(Variables.AppSettings.MqttClientCertificate)) Log.Error("[MQTT] Provided client certificate not found: {cert}", Variables.AppSettings.MqttClientCertificate);
-                certificates.Add(new X509Certificate2(Variables.AppSettings.MqttClientCertificate));
+                certificates.Add(new X509Certificate2(Variables.AppSettings.MqttClientCertificate, Variables.AppSettings.MqttClientCertificatePassword));
             }
 
             if (certificates.Count > 0) tlsParameters.Certificates = certificates;

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HASS.Agent", "HASS.Agent\HASS.Agent.csproj", "{F172A9B4-AA7B-4F78-B44A-A2BC0CD52DAA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HASS.Agent.Shared", "HASS.Agent.Shared\HASS.Agent.Shared.csproj", "{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,20 @@ Global
 		{F172A9B4-AA7B-4F78-B44A-A2BC0CD52DAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F172A9B4-AA7B-4F78-B44A-A2BC0CD52DAA}.Release|x64.ActiveCfg = Release|x64
 		{F172A9B4-AA7B-4F78-B44A-A2BC0CD52DAA}.Release|x64.Build.0 = Release|x64
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Debug|x64.ActiveCfg = Debug|x64
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Debug|x64.Build.0 = Debug|x64
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Release|x64.ActiveCfg = Release|x64
+		{9E5ECB9E-3BD4-428F-9D10-2C4EA456A984}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		VisualSVNWorkingCopyRoot = .
 		SolutionGuid = {4350BB92-A2B6-4199-B628-AC4EBD1DE959}
+		VisualSVNWorkingCopyRoot = .
 	EndGlobalSection
 EndGlobal

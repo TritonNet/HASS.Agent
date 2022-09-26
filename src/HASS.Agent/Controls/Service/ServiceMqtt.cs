@@ -123,6 +123,7 @@ namespace HASS.Agent.Controls.Service
             TbMqttClientId.Text = mqttSettings.MqttClientId;
             TbMqttRootCertificate.Text = mqttSettings.MqttRootCertificate;
             TbMqttClientCertificate.Text = mqttSettings.MqttClientCertificate;
+            TbMqttClientCertificatePassword.Text = mqttSettings.MqttClientCertificatePassword;
             CbAllowUntrustedCertificates.Checked = mqttSettings.MqttAllowUntrustedCertificates;
             CbUseRetainFlag.Checked = mqttSettings.MqttUseRetainFlag;
         }
@@ -163,6 +164,7 @@ namespace HASS.Agent.Controls.Service
             TbMqttClientId.Text = Guid.NewGuid().ToString()[..8];
             TbMqttRootCertificate.Text = string.Empty;
             TbMqttClientCertificate.Text = string.Empty;
+            TbMqttClientCertificatePassword.Text = string.Empty;
             CbAllowUntrustedCertificates.Checked = true;
             CbUseRetainFlag.Checked = true;
         }
@@ -187,6 +189,7 @@ namespace HASS.Agent.Controls.Service
                 MqttClientId = TbMqttClientId.Text,
                 MqttRootCertificate = TbMqttRootCertificate.Text,
                 MqttClientCertificate = TbMqttClientCertificate.Text,
+                MqttClientCertificatePassword = TbMqttClientCertificatePassword.Text,
                 MqttAllowUntrustedCertificates = CbAllowUntrustedCertificates.Checked,
                 MqttUseRetainFlag = CbUseRetainFlag.Checked
             };

@@ -55,6 +55,8 @@ namespace HASS.Agent.Controls.Configuration
             this.LblClientId = new System.Windows.Forms.Label();
             this.NumMqttPort = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
             this.PbShow = new System.Windows.Forms.PictureBox();
+            this.TbMqttClientCertificatePassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumMqttPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbShow)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +71,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblTip3.Name = "LblTip3";
             this.LblTip3.Size = new System.Drawing.Size(268, 28);
             this.LblTip3.TabIndex = 64;
-            this.LblTip3.Text = Languages.ConfigMqtt_LblTip3;
+            this.LblTip3.Text = "tip: doubleclick these fields to browse";
             // 
             // TbMqttClientCertificate
             // 
@@ -97,7 +99,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblClientCert.Name = "LblClientCert";
             this.LblClientCert.Size = new System.Drawing.Size(103, 19);
             this.LblClientCert.TabIndex = 63;
-            this.LblClientCert.Text = Languages.ConfigMqtt_LblClientCert;
+            this.LblClientCert.Text = "client certificate";
             // 
             // TbMqttRootCertificate
             // 
@@ -125,7 +127,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblRootCert.Name = "LblRootCert";
             this.LblRootCert.Size = new System.Drawing.Size(97, 19);
             this.LblRootCert.TabIndex = 61;
-            this.LblRootCert.Text = Languages.ConfigMqtt_LblRootCert;
+            this.LblRootCert.Text = "root certificate";
             // 
             // CbUseRetainFlag
             // 
@@ -134,7 +136,7 @@ namespace HASS.Agent.Controls.Configuration
             this.CbUseRetainFlag.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.CbUseRetainFlag.AutoSize = true;
             this.CbUseRetainFlag.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CbUseRetainFlag.Location = new System.Drawing.Point(410, 345);
+            this.CbUseRetainFlag.Location = new System.Drawing.Point(410, 380);
             this.CbUseRetainFlag.Name = "CbUseRetainFlag";
             this.CbUseRetainFlag.Size = new System.Drawing.Size(114, 23);
             this.CbUseRetainFlag.TabIndex = 10;
@@ -148,7 +150,7 @@ namespace HASS.Agent.Controls.Configuration
             this.CbAllowUntrustedCertificates.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.CbAllowUntrustedCertificates.AutoSize = true;
             this.CbAllowUntrustedCertificates.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CbAllowUntrustedCertificates.Location = new System.Drawing.Point(410, 287);
+            this.CbAllowUntrustedCertificates.Location = new System.Drawing.Point(410, 351);
             this.CbAllowUntrustedCertificates.Name = "CbAllowUntrustedCertificates";
             this.CbAllowUntrustedCertificates.Size = new System.Drawing.Size(191, 23);
             this.CbAllowUntrustedCertificates.TabIndex = 9;
@@ -189,7 +191,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblTip1.Name = "LblTip1";
             this.LblTip1.Size = new System.Drawing.Size(138, 15);
             this.LblTip1.TabIndex = 56;
-            this.LblTip1.Text = Languages.ConfigMqtt_LblTip1;
+            this.LblTip1.Text = "(leave default if not sure)";
             // 
             // LblInfo1
             // 
@@ -201,7 +203,8 @@ namespace HASS.Agent.Controls.Configuration
             this.LblInfo1.Name = "LblInfo1";
             this.LblInfo1.Size = new System.Drawing.Size(577, 75);
             this.LblInfo1.TabIndex = 55;
-            this.LblInfo1.Text = Languages.ConfigMqtt_LblInfo1;
+            this.LblInfo1.Text = "Commands and sensors are sent through MQTT. Please provide credentials for your s" +
+    "erver. If\r\nyou\'re using the HA addon, you can probably use the preset address.";
             // 
             // TbMqttDiscoveryPrefix
             // 
@@ -228,7 +231,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblDiscoPrefix.Name = "LblDiscoPrefix";
             this.LblDiscoPrefix.Size = new System.Drawing.Size(103, 19);
             this.LblDiscoPrefix.TabIndex = 54;
-            this.LblDiscoPrefix.Text = Languages.ConfigMqtt_LblDiscoPrefix;
+            this.LblDiscoPrefix.Text = "discovery prefix";
             // 
             // TbMqttPassword
             // 
@@ -298,7 +301,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblBrokerPassword.Name = "LblBrokerPassword";
             this.LblBrokerPassword.Size = new System.Drawing.Size(67, 19);
             this.LblBrokerPassword.TabIndex = 52;
-            this.LblBrokerPassword.Text = Languages.ConfigMqtt_LblBrokerPassword;
+            this.LblBrokerPassword.Text = "password";
             // 
             // LblBrokerUsername
             // 
@@ -311,7 +314,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblBrokerUsername.Name = "LblBrokerUsername";
             this.LblBrokerUsername.Size = new System.Drawing.Size(69, 19);
             this.LblBrokerUsername.TabIndex = 51;
-            this.LblBrokerUsername.Text = Languages.ConfigMqtt_LblBrokerUsername;
+            this.LblBrokerUsername.Text = "username";
             // 
             // LblBrokerPort
             // 
@@ -324,7 +327,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblBrokerPort.Name = "LblBrokerPort";
             this.LblBrokerPort.Size = new System.Drawing.Size(35, 19);
             this.LblBrokerPort.TabIndex = 50;
-            this.LblBrokerPort.Text = Languages.ConfigMqtt_LblBrokerPort;
+            this.LblBrokerPort.Text = "port";
             // 
             // LblBrokerIp
             // 
@@ -337,7 +340,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblBrokerIp.Name = "LblBrokerIp";
             this.LblBrokerIp.Size = new System.Drawing.Size(197, 19);
             this.LblBrokerIp.TabIndex = 47;
-            this.LblBrokerIp.Text = Languages.ConfigMqtt_LblBrokerIp;
+            this.LblBrokerIp.Text = "broker ip address or hostname";
             // 
             // LblTip2
             // 
@@ -350,7 +353,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblTip2.Name = "LblTip2";
             this.LblTip2.Size = new System.Drawing.Size(142, 15);
             this.LblTip2.TabIndex = 70;
-            this.LblTip2.Text = Languages.ConfigMqtt_LblTip2;
+            this.LblTip2.Text = "(leave empty for random)";
             // 
             // TbMqttClientId
             // 
@@ -378,7 +381,7 @@ namespace HASS.Agent.Controls.Configuration
             this.LblClientId.Name = "LblClientId";
             this.LblClientId.Size = new System.Drawing.Size(56, 19);
             this.LblClientId.TabIndex = 69;
-            this.LblClientId.Text = Languages.ConfigMqtt_LblClientId;
+            this.LblClientId.Text = "client id";
             // 
             // NumMqttPort
             // 
@@ -426,6 +429,34 @@ namespace HASS.Agent.Controls.Configuration
             this.PbShow.TabStop = false;
             this.PbShow.Click += new System.EventHandler(this.PbShow_Click);
             // 
+            // TbMqttClientCertificatePassword
+            // 
+            this.TbMqttClientCertificatePassword.AccessibleDescription = "Password to connect to the broker with.";
+            this.TbMqttClientCertificatePassword.AccessibleName = "Password";
+            this.TbMqttClientCertificatePassword.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.TbMqttClientCertificatePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.TbMqttClientCertificatePassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TbMqttClientCertificatePassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TbMqttClientCertificatePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.TbMqttClientCertificatePassword.Location = new System.Drawing.Point(410, 298);
+            this.TbMqttClientCertificatePassword.Name = "TbMqttClientCertificatePassword";
+            this.TbMqttClientCertificatePassword.Size = new System.Drawing.Size(268, 25);
+            this.TbMqttClientCertificatePassword.TabIndex = 101;
+            this.TbMqttClientCertificatePassword.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AccessibleDescription = "Client certificate textbox description.";
+            this.label1.AccessibleName = "Client certificate info";
+            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(410, 276);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 19);
+            this.label1.TabIndex = 102;
+            this.label1.Text = "client certificate password";
+            // 
             // ConfigMqtt
             // 
             this.AccessibleDescription = "Panel containing the MQTT client configuration.";
@@ -434,6 +465,8 @@ namespace HASS.Agent.Controls.Configuration
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TbMqttClientCertificatePassword);
             this.Controls.Add(this.PbShow);
             this.Controls.Add(this.NumMqttPort);
             this.Controls.Add(this.LblTip2);
@@ -498,5 +531,7 @@ namespace HASS.Agent.Controls.Configuration
         private System.Windows.Forms.Label LblClientId;
         internal Syncfusion.Windows.Forms.Tools.NumericUpDownExt NumMqttPort;
         private PictureBox PbShow;
+        internal TextBox TbMqttClientCertificatePassword;
+        private Label label1;
     }
 }

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = HASS.Agent.Shared
+build_property.ProjectDir = D:\projects\HASS.Agent\src\HASS.Agent.Shared\
