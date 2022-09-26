@@ -1,6 +1,8 @@
 
 .vs/
 
-HASSAgent/bin/
+/src/HASS.Agent/bin
+/src/HASS.Agent/obj
 
-HASSAgent/obj/
+/src/HASS.Agent.Shared/bin
+/src/HASS.Agent.Shared/obj
